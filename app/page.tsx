@@ -2,10 +2,14 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to My Next.js App!</h1>
-      <p>This is the home page.</p>
-      <Link href="/about" style={{color: "blue", textDecoration: "underline"}}>Go to About Page</Link>
-    </div>
+    <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center text-center px-4">
+      <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome to My Next.js App!</h1>
+      <p className="text-lg text-gray-500 mb-8">I am learning Next.js and Tailwind CSS</p>
+      <div className="flex gap-4">
+        <Link href="/about" className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">About Me</Link>
+        <Link href="/posts" className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900">Read Posts</Link>
+        <Link href="/contact" className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600">Contact Us</Link>
+      </div>
+    </main>
   )
 }
