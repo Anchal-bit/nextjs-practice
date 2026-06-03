@@ -8,6 +8,8 @@ export default function Navbar() {
       <Link href="/blog" className="text-white font-bold hover:text-blue-400">Blog</Link>
       <Link href="/posts" className="text-white font-bold hover:text-blue-400">Posts</Link>
       <Link href="/contact" className="text-white font-bold hover:text-blue-400">Contact</Link>
+      <Link href="/create-post" className="text-white font-bold hover:text-blue-400">Write Post</Link>
+      <Link href="/my-blog" className="text-white font-bold hover:text-blue-400">My Blog</Link>
     </nav>
   )
 }
